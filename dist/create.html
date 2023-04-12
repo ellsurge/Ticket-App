@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+</head>
+<body>
+    <!-- Onboarding Navbar -->
+    <section>
+        <nav class="relative container mx-auto p-5 pt-8 md-10 lg:px-20 xl:px-32">
+          <div class="flex flex-row items-center justify-between">
+            <div>
+              <h1 class="text-green-800">Veritas Event</h1>
+            </div>
+            <div class="flex space-x-8">
+              <a
+                class="font-medium hover:text-red-700 text-black cursor-pointer custombtn"
+                href="./create.html"
+                >Create Event</a
+              >
+            </div>
+          </div>
+    
+        </nav>
+      </section>
+    <!-- On boarding navbar end -->
+
+    <!-- Detail Section -->
+    <section class="relative container mx-auto p-5 pt-8 md-10 lg:px-20 xl:px-32">
+        <div>
+            <h1 class="text-5xl font-bold">Create an event</h1>
+            <h5  class="mt-5 font-light text-gray-600">Enter the details of your event</h5>
+        </div>
+    </section>
+    <!-- Form & Validation Start -->
+    <section class="relative container mx-auto p-5 pt-8 md-10 lg:px-20 xl:px-32">
+        <form>
+            <div class="mb-6">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="email" name="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-l-green-800 focus:border-l-green-800">
+            </div>
+
+            <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" name="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-l-green-800 focus:border-l-green-800">
+              </div>
+              
+              <div class="mb-6">
+                  <label for="password" class="block text-gray-700 font-medium mb-2">Event</label>
+                  <input type="password" name="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Currency</label>
+                <input type="email" name="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-l-green-800 focus:border-l-green-800">
+              </div>
+              
+              <div class="mb-6">
+                  <label for="password" class="block text-gray-700 font-medium mb-2">Business Name</label>
+                  <input type="password" name="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Password</label>
+                <input type="email" name="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-l-green-800 focus:border-l-green-800">
+              </div>
+              
+              <div class="mb-6">
+                  <label for="password" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+                  <input type="password" name="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              </div>
+            
+            <div class="mb-6">
+                <label for="checkbox" class="flex items-center">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="rounded text-green-800 focus:ring-2 focus:ring-green-500 focus:outline-none">
+                  <span class="ml-2 text-gray-700">I agree to the Terms of Service</span>
+                </label>
+              </div>
+            <div class="mb-6 mt-6">
+              <button type="submit" name="submit" class="bg-green-800 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-md shadow-sm">Create Event</button>
+            </div>
+          </form>
+    </section>
+    <!-- Form & Validation end -->
+</body>
+</html>
