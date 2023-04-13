@@ -7,6 +7,9 @@
     <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
     <title>Veritas Events</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/department.js"></script>
+
   </head>
   <body class="overflow-x-hidden mt-0 mx-0 mb-28 pb-7">
     <!-- Nav Bar Begins -->
@@ -17,17 +20,16 @@
             <h1 class="text-green-800 navpadding">Veritas Event</h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a
-              class="font-medium text-black cursor-pointer navpadding"
-              href="./login.html"
-              >Login</a
-            >
-            <a
-              class="font-medium text-black cursor-pointer custombtn"
+            <a class="font-medium text-black cursor-pointer "
+              href="./login"
+              >Login</a>
+              <a
+              class="font-medium  cursor-pointer custombtn"
               href="./create.html"
               >Create Event</a
             >
           </div>
+          
           <button
             id="nav-btn"
             class="block hamburger md:hidden focus:outline-none z-50"
@@ -45,8 +47,12 @@
             class="fixed hidden text-center items-center py-8 space-y-6 font-bold bg-white left-0 right-0 top-0 h-full z-10"
           >
             <div class="flex flex-col top-1/4 w-full items-center">
-              <a class="text-black my-5 py-5" href="#Home">Login</a>
-              <a class="text-black custombtn" href="#classes">Create Event</a>
+              <a class="text-black my-5 py-5" href="./login">Login</a>
+              <a
+              class="font-medium hover:text-red-700 text-black cursor-pointer custombtn"
+              href="./create.html"
+              >Create Event</a
+            >
             </div>
           </div>
         </div>
@@ -58,19 +64,20 @@
         The best events on campus
       </div>
       <div class="mt-8 text-center">
-        <select>
-          <option value="" disabled="disabled" selected="selected">
+        <label for="underline_select" class="sr-only">Underline select</label>
+        <select id="select-dept" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-dark-200 peer">
+          <option disabled  selected="selected">
             Select Department
           </option>
-          <option value="1">Computer Science</option>
-          <option value="2">History</option>
+          <option value="csc">Computer Science</option>
+          <option value="pos">pol science</option>
         </select>
       </div>
-    </section>
+    </section id="dep-ticks" class="h-screen">
     <!-- Hero End -->
-    <section class="relative container p-5 pt-8 mx-auto flex flex-col md:flex-row md:gap-8 md-10 lg:px-20 xl:px-32">
+    <section class="container   items-center justify-center relative  p-5 pt-8 mx-auto flex flex-wrap lg:flex-wrap md:gap-8 md-10 lg:px-20 xl:px-32 ">
       <!-- First Event -->
-      <div class="">
+      <div class="department csc lg:basis-1/4">
         <a href="./computerscience.html">
           <img src="./images/wine.jpeg" alt="wine" />
         </a>
@@ -85,7 +92,21 @@
         </div>
       </div>
       <!-- Second Event -->
-      <div class="">
+      <div class="department pos lg:basis-1/4">
+        <a href="./computerscience.html">
+          <img src="./images/wine.jpeg" alt="wine" />
+        </a>
+        <div class="my-5">
+          <p class="font-normal text-xs text-gray-700 my-1">17TH MARCH 2023</p>
+          <h4 class="font-semibold tracking-wide my-1">
+            pol SCIENCE DEPARTMENT PARTY
+          </h4>
+          <p class="font-normal text-xs text-gray-700 my-1">
+            NGN 5,00000000000 - NGN 10,000
+          </p>
+        </div>
+      </div>
+      <div class="department csc lg:basis-1/4">
         <a href="./computerscience.html">
           <img src="./images/wine.jpeg" alt="wine" />
         </a>
@@ -99,6 +120,22 @@
           </p>
         </div>
       </div>
+      <!-- Second Event -->
+      <div class="department csc lg:basis-1/4">
+        <a href="./computerscience.html">
+          <img src="./images/wine.jpeg" alt="wine" />
+        </a>
+        <div class="my-5">
+          <p class="font-normal text-xs text-gray-700 my-1">17TH MARCH 2023</p>
+          <h4 class="font-semibold tracking-wide my-1">
+            pol SCIENCE DEPARTMENT PARTY
+          </h4>
+          <p class="font-normal text-xs text-gray-700 my-1">
+            NGN 5,00000000000 - NGN 10,000
+          </p>
+        </div>
+      </div>
+      
     </section>
 
     <!-- Footer Beginning -->
@@ -115,6 +152,7 @@
       </section>
     </footer>
     <!-- Footer Ending -->
+
     <script src="index.js"></script>
   </body>
 </html>
